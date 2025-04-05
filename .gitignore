@@ -2,3 +2,9 @@
 secrets.yaml
 .venv
 venv
+/.embuild
+/target
+/Cargo.lock
+cfg.toml
+_uuid.rs
+uuid.toml

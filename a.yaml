@@ -20,11 +20,11 @@ i2c:
   sda: GPIO5
   scl: GPIO4
   scan: true
-  frequency: 400khz
+  frequency: 100khz
 
 deep_sleep:
-  run_duration: 1s
-  sleep_duration: 30min
+  run_duration: 5s
+  sleep_duration: 10min
 
 sensor:
   - platform: sht3xd
@@ -46,5 +46,6 @@ sensor:
     pin: GPIO0
     name: "Battery Voltage"
     unit_of_measurement: "V"
+    attenuation: auto
     filters:
-      - multiply: 5.14
+      - multiply: 2
